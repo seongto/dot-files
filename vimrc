@@ -35,6 +35,7 @@ set ruler             " Always show current positions along the bottom
 set cursorline        " highlight current line
 set numberwidth=5     " We are good up to 99999 lines
 set backspace=2       " make backspace work like most other apps
+set guifont=Monaco\ 20
 
 
 """"""""""""For python""""""""""""""""""""""
