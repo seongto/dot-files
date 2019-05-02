@@ -4,6 +4,9 @@ Plug 'https://github.com/vim-scripts/ScrollColors.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/vim-scripts/Align.git'
+Plug 'https://github.com/pangloss/vim-javascript.git'
+Plug 'https://github.com/mxw/vim-jsx.git'
+Plug 'https://github.com/w0rp/ale.git'
 
 call plug#end()
 
@@ -35,17 +38,31 @@ set ruler             " Always show current positions along the bottom
 set cursorline        " highlight current line
 set numberwidth=5     " We are good up to 99999 lines
 set backspace=2       " make backspace work like most other apps
-set guifont=Monaco\ 20
 
 
-""""""""""""For python""""""""""""""""""""""
+"""""""""""" For python """"""""""""""""""""""
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
-set tabstop=4
+set tabstop=2
 set softtabstop=4
-" On pressing tab, insert 4 spaces
-set expandtab
+
+
+
+"""""""""""" vim for React """""""""""""""
+
+" --- react 설치 폴더에 ESLint 설치 / 상단'w0rp/ale' 플러그인 설치.
+"$ yarn add --dev eslint babel-eslint eslint-plugin-react
+" --- ESLint run
+"$ eslint --init
+
+
+
+"""""""""""" Nerdtree """""""""""""""""
+map <C-n> :NERDTreeToggle<CR>
+
+
 
 """"""""""""""""""""""""""""""""""""""""""""
+
 
