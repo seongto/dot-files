@@ -43,10 +43,12 @@ set backspace=2       " make backspace work like most other apps
 """""""""""" For python """"""""""""""""""""""
 
 filetype plugin indent on
-" show existing tab with 4 spaces width
+" show existing tab with 2 spaces width
 set tabstop=2
-set softtabstop=4
-
+set softtabstop=2
+set smartindent
+set expandtab
+set shiftwidth=2 ">>, << 키로 들여/내어 쓰기할 때, 스페이스 개수
 
 
 """""""""""" vim for React """""""""""""""
