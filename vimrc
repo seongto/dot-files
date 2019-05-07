@@ -7,6 +7,7 @@ Plug 'https://github.com/vim-scripts/Align.git'
 Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'https://github.com/w0rp/ale.git'
+Plug 'https://github.com/vovkasm/input-source-switcher.git' "명령모드 자동 영어 변경
 
 call plug#end()
 
@@ -27,7 +28,7 @@ set number
 
 set t_Co=256          " enables 256 colors
 syntax enable
-set encoding=utf-8
+"set encoding=utf-8
 set noundofile
 set history=1000      " remember more commands and search history
 set undolevels=1000   " use many muchos levels of undo
@@ -46,17 +47,9 @@ filetype plugin indent on
 " show existing tab with 2 spaces width
 set tabstop=2
 set softtabstop=2
-set smartindent
+" set smartindent - 얘 때문에 꼬이는 거 같아서 일단 주석처리.
 set expandtab
 set shiftwidth=2 ">>, << 키로 들여/내어 쓰기할 때, 스페이스 개수
-
-
-"""""""""""" vim for React """""""""""""""
-
-" --- react 설치 폴더에 ESLint 설치 / 상단'w0rp/ale' 플러그인 설치.
-"$ yarn add --dev eslint babel-eslint eslint-plugin-react
-" --- ESLint run
-"$ eslint --init
 
 
 
@@ -65,6 +58,5 @@ map <C-n> :NERDTreeToggle<CR>
 
 
 
-""""""""""""""""""""""""""""""""""""""""""""
-
-
+"""""""""""" esc 때 자동 한영전환""""""""""""""
+set noimd
