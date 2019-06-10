@@ -103,3 +103,5 @@ export PATH="$HOME/bin/miniconda3/bin:$PATH"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ls='lsd'
