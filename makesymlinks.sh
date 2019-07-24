@@ -8,7 +8,7 @@
 
 dir=~/devs/dot-files                    # dotfiles directory
 olddir=~/.dotfiles_old             # old dotfiles backup directory
-files="vimrc zshrc npmrc"    # list of files/folders to symlink in homedir
+files="vimrc zshrc npmrc eslintrc"    # list of files/folders to symlink in homedir
 
 ##########
 

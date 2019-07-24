@@ -8,6 +8,8 @@ Plug 'https://github.com/pangloss/vim-javascript.git'
 Plug 'https://github.com/mxw/vim-jsx.git'
 Plug 'https://github.com/w0rp/ale.git'
 Plug 'https://github.com/vovkasm/input-source-switcher.git' "명령모드 자동 영어 변경
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
 
 call plug#end()
 
@@ -60,3 +62,11 @@ map <C-n> :NERDTreeToggle<CR>
 
 """""""""""" esc 때 자동 한영전환""""""""""""""
 set noimd
+
+
+
+"""""""""""" eslint 관련 셋팅 """"""""""""""
+let g:jsx_ext_required = 0 
+let g:prettier#autoformat = 0 
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
