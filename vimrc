@@ -10,6 +10,7 @@ Plug 'https://github.com/w0rp/ale.git'
 Plug 'https://github.com/vovkasm/input-source-switcher.git' "명령모드 자동 영어 변경
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'https://github.com/alvan/vim-closetag.git' "HTML 태그 auto close
+Plug 'evanleck/vim-svelte' "vim for svelte
 
 call plug#end()
 

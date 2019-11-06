@@ -105,3 +105,9 @@ export PATH="$HOME/bin/miniconda3/bin:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ls='lsd'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/seongto/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/seongto/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/seongto/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/seongto/google-cloud-sdk/completion.zsh.inc'; fi
