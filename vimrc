@@ -11,6 +11,7 @@ Plug 'https://github.com/vovkasm/input-source-switcher.git' "명령모드 자동
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'https://github.com/alvan/vim-closetag.git' "HTML 태그 auto close
 Plug 'evanleck/vim-svelte' "vim for svelte
+Plug 'dart-lang/dart-vim-plugin'
 
 call plug#end()
 

@@ -81,6 +81,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/miniconda3/bin:$PATH"
+export PATH="$HOME/devs/flutter/bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
